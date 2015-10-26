@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bandwidth at Comptel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css"/>
+  </head>
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="/"><img class="logo" src="/logo-catapult.png"></a>
+          </div>
+      </div>
+  </nav>
+  <div class="container">
+      <div class="starter-template">
+          <h1 class="lead">Bandwidth Call Tracking Example</h1>
+            <h2 class="lead">(415)-322-0022</h2>
+              <table class="table table-striped">
+                <tr>
+                <td>Number of Calls</td>
+                <td>Last Caller</td>
+                <td>Last Call Duration</td>
+                </tr>
+                <tr>
+                <td id="numOfCalls1">0</td>
+                <td id="caller1"></td>
+                <td id="dur1">0 seconds</td>
+                </tr>
+              </table>
+            <h2 class="lead">(415)-598-7333</h2>
+              <table class="table table-striped">
+                <tr>
+                <td>Number of Calls</td>
+                <td>Last Caller</td>
+                <td>Last Call Duration</td>
+                </tr>
+                <tr>
+                <td id="numOfCalls2">0</td>
+                <td id="caller2"></td>
+                <td id="dur2">0 seconds</td>
+                </tr>
+              </table>
+             <h2 class="lead">(415)-723-1444</h2>
+              <table class="table table-striped">
+                <tr>
+                <td>Number of Calls</td>
+                <td>Last Caller</td>
+                <td>Last Call Duration</td>
+                </tr>
+                <tr>
+                <td id="numOfCalls3">0</td>
+                <td id="caller3"></td>
+                <td id="dur3">0 seconds</td>
+                </tr>
+              </table>
+      </div>
+  </div>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      var socket = io();
+      socket.on('numCalls1', function(numCalls){
+        $('#numOfCalls1').text(numCalls);
+      });
+      socket.on('duration1', function(duration) {
+        $('#dur1').text(duration + " seconds");
+      });
+      socket.on('caller1', function(caller) {
+        $('#caller1').text(caller);
+      });
+      socket.on('numCalls2', function(numCalls){
+        $('#numOfCalls2').text(numCalls);
+      });
+      socket.on('duration2', function(duration) {
+        $('#dur2').text(duration + " seconds");
+      });
+      socket.on('caller2', function(caller) {
+        $('#caller2').text(caller);
+      });
+      socket.on('numCalls3', function(numCalls){
+        $('#numOfCalls3').text(numCalls);
+      });
+      socket.on('duration3', function(duration) {
+        $('#dur3').text(duration + " seconds");
+      });
+      socket.on('caller3', function(caller) {
+        $('#caller3').text(caller);
+      });
+    </script>
+  </body>
+</html>
