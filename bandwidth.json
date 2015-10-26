@@ -1,6 +1,6 @@
 {
-	"userId": "u-yourUserID", //Your userID
-	"apiToken": "t-yourToken",  //Your API Token
-	"apiSecret": "yourSecret", //Your API Secret
-	"baseUrl": "http://yourURL.ngrok.io" //base URL of your app
+	"userId": "u-yourUserID",
+	"apiToken": "t-yourToken",
+	"apiSecret": "yourSecret",
+	"baseUrl": "http://yourURL.ngrok.io" 
 }
