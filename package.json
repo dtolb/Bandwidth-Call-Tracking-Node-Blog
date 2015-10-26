@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/dtolb/comptel#readme",
   "dependencies": {
+    "bluebird": "^2.10.2",
     "express": "^4.13.3",
     "node-bandwidth": "^1.2.4",
     "socket.io": "^1.3.7"
