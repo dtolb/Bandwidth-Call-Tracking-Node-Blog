@@ -28,5 +28,5 @@ The app is written in node, so following normal conventions just run:
 ```npm start```
 
 # Live Demo
-### [Live Demo Here](calltracking.bwdemos.com)
+### [Live Demo Here](http://calltracking.bwdemos.com)
 ![demo](https://s3.amazonaws.com/bwdemos/shot-3.png)
