@@ -30,3 +30,7 @@ The app is written in node, so following normal conventions just run:
 # Live Demo
 ### [Live Demo Here](http://calltracking.bwdemos.com)
 ![demo](https://s3.amazonaws.com/bwdemos/shot-3.png)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dtolb/bandwidth-call-tracking-node-blog/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
